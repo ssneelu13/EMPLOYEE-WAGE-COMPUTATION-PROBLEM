@@ -22,5 +22,19 @@ public class Employee_Wage {
         else{
             System.out.println("employee is absent and salary is zero");
         }
+        wage_per_hr = 20;//per hr pay
+        int full_time = (int) (Math.random()*(max-min+1));
+        if (full_time == 1) {
+            System.out.println("full time employee");
+            int full_time_hrs=16;
+            int salary=(wage_per_hr*full_time_hrs);
+            System.out.println("salary is:"+salary);
+        }
+        else{
+            System.out.println("part time employee");
+            int part_time_hrs=8;
+            int salary=(wage_per_hr*part_time_hrs);
+            System.out.println("salary is:"+salary);
+        }
     }
 }
