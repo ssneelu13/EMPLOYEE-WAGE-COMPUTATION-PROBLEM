@@ -58,5 +58,22 @@ public class Employee_Wage {
                 System.out.println("not an employee");
                 break;
         }
+        int number_of_working_days=20; //Calculating Wages for a Month
+        int monthly_pay;
+        if (employee_type == 0) {
+            System.out.println("part time employee");
+            int salary = (wage_per_hr * part_time_hrs);
+            //System.out.println("salary: " + salary);
+            int no_of_weeks = salary * 48;
+            monthly_pay = no_of_weeks / 12;
+            System.out.println("monthly_pay: " + monthly_pay);
+        } else {
+            System.out.println("full time employee");
+            int salary = (wage_per_hr * full_time_hrs);
+            //System.out.println("salary: " + salary);
+            int no_of_weeks = salary * 48;
+            monthly_pay = no_of_weeks / 12;
+            System.out.println("monthly_pay: " + monthly_pay);
+        }
     }
 }
